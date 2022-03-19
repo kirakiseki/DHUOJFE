@@ -15,6 +15,7 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.2.0",
     "babel-plugin-import": "^1.13.3",
+    "sass": "^1.49.9",
     "style-resources-loader": "^1.4.1",
     "unplugin-auto-import": "^0.6.6",
     "unplugin-vue-components": "^0.18.1",

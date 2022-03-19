@@ -1,16 +1,33 @@
 <template>
     <el-row>
-        <el-col :span="24"  class="nav-card">
-            <img src="../assets/logo.png" alt class="nav-logo" />
+        <el-col :span="10" class="banner hidden-sm-and-down">
+            <img src="../assets/logo.png" alt class="banner-logo" />
         </el-col>
     </el-row>
     <el-row>
-        <el-col :span="24" class="navbar__menu-box">
-            <ul class="el-menu el-menu--horizontal navbar__menu">
-                <li class="el-menu-item">菜单1</li>
-                <li class="el-menu-item">菜单2</li>
-                <li class="el-menu-item">菜单2</li>
-            </ul>
+        <el-col :span="24">
+            <el-menu
+                :default-active="activeIndex"
+                class="el-menu-demo"
+                mode="horizontal"
+                @select="handleSelect"
+            >
+                <el-menu-item index="1">Processing Center</el-menu-item>
+                <el-sub-menu index="2">
+                    <template #title>Workspace</template>
+                    <el-menu-item index="2-1">item one</el-menu-item>
+                    <el-menu-item index="2-2">item two</el-menu-item>
+                    <el-menu-item index="2-3">item three</el-menu-item>
+                    <el-sub-menu index="2-4">
+                        <template #title>item four</template>
+                        <el-menu-item index="2-4-1">item one</el-menu-item>
+                        <el-menu-item index="2-4-2">item two</el-menu-item>
+                        <el-menu-item index="2-4-3">item three</el-menu-item>
+                    </el-sub-menu>
+                </el-sub-menu>
+                <el-menu-item index="3" disabled>Info</el-menu-item>
+                <el-menu-item index="4">Orders</el-menu-item>
+            </el-menu>
         </el-col>
     </el-row>
 </template>
@@ -18,12 +35,6 @@
 <script>
 
 </script>
-<style>
-.nav-card {
-    background-color: #0da7ff;
-    height: 150px;
-}
-.nav-logo {
-    height: 150px;
-}
+<style scoped lang="scss">
+@import '@/assets/scss/nav.scss';
 </style>

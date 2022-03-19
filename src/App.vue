@@ -6,10 +6,7 @@ import Nav from './components/nav.vue';
   <Nav></Nav>
 </template>
 
-  <style>
-body {
-  margin: 0;
-  padding: 0;
-}
+<style lang="scss">
+@import '@/assets/scss/globalStyle.scss';
 </style>
 
