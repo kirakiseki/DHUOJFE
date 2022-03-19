@@ -1,7 +1,37 @@
 .banner {
-    background-color: #ff6600;
-    height: 150px;
+    background-color: $banner-color;
+    height: $banner-height;
 }
-.banner-logo {
-    height: 150px;
+
+.banner-logo{
+    background-image: url(../logo.png);
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.banner-title-container{
+    margin-top: 0.5*0.25*$banner-height;
+    margin-left: 0.1*$banner-height;
+}
+
+.banner-title{
+    color: white;
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB','Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+.banner-subtitle{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB','Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+}
+
+.menu-title{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    align-items: baseline;
 }
