@@ -1,6 +1,7 @@
 <script setup>
 import Nav from './components/nav.vue';
 import Footer from './components/footer.vue';
+import Main from './components/main.vue';
 </script>
 
 <template>
@@ -9,7 +10,7 @@ import Footer from './components/footer.vue';
       <Nav></Nav>
     </el-header>
     <el-main class="main">
-      <el-skeleton :rows="15" />
+      <Main></Main>
     </el-main>
     <el-footer>
       <p>Footer Area</p>
