@@ -10,7 +10,17 @@ import Main from './components/main.vue';
       <Nav></Nav>
     </el-header>
     <el-main class="main">
-      <Main></Main>
+  <el-row :gutter="20" class="hidden-md-and-down">
+    <el-col :span="19"><Main title="hidden-md-and-down 1"></Main></el-col>
+    <el-col :span="5"><Main title="hidden-md-and-down 2"></Main></el-col>
+  </el-row>
+  <el-row class="hidden-lg-and-up">
+    <el-col :span="24"><Main title="hidden-lg-and-up 1"></Main></el-col>
+  </el-row>
+  <el-row class="hidden-lg-and-up">
+    <el-col :span="24"><Main title="hidden-lg-and-up 2"></Main></el-col>
+  </el-row>
+      
     </el-main>
     <el-footer>
       <p>Footer Area</p>
