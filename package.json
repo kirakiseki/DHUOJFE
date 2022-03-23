@@ -20,6 +20,7 @@
     "unplugin-auto-import": "^0.6.6",
     "unplugin-vue-components": "^0.18.1",
     "vite": "^2.8.0",
-    "vue-cli-plugin-style-resources-loader": "~0.1.5"
+    "vue-cli-plugin-style-resources-loader": "~0.1.5",
+    "vue-router": "^4.0.14"
   }
 }
