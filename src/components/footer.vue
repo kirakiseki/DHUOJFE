@@ -1,15 +1,6 @@
 <template>
-    <el-row class="hidden-sm-and-down">
-        <el-col :span="2" class="banner banner-logo hidden-md-and-down"></el-col>
-        <el-col :span="22" class="banner hidden-md-and-down">
-            <div class="banner-title-container">
-                <el-row>
-                    <span class="banner-title">DHU Online Judge</span>
-                </el-row>
-                <el-row>
-                    <p class="banner-subtitle">Developed by ACM Training Team of Donghua University</p>
-                </el-row>
-            </div>
+    <el-row class="footer hidden-sm-and-down">
+        <el-col :span="24" class="hidden-md-and-down">
         </el-col>
     </el-row>
 </template>
@@ -24,5 +15,5 @@ const handleSelect = (key: string, keyPath: string[]) => {
 </script>
 
 <style scoped lang="scss">
-@import "@/assets/scss/nav.scss";
+@import "@/assets/scss/footer.scss";
 </style>

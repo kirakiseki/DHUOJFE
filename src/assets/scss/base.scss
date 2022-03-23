@@ -3,6 +3,20 @@
   height: auto;
 }
 
-.main{
-  height: 1700px;
+.footer {
+  height: $footer-height;
+  padding: 0;
+}
+
+.page-container{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.main-container{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
