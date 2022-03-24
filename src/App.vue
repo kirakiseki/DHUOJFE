@@ -2,6 +2,7 @@
 import Nav from './components/nav.vue';
 import Footer from './components/footer.vue';
 import Main from './components/main.vue';
+import Tags from './components/sidebar/tags.vue';
 </script>
 
 <template>
@@ -15,8 +16,9 @@ import Main from './components/main.vue';
           <el-col :span="19">
             <Main title="hidden-md-and-down 1"></Main>
           </el-col>
-          <el-col :span="5">
-            <Main title="hidden-md-and-down 2"></Main>
+          <el-col :span="5" class="sidebar">
+              <Tags></Tags>
+              <Tags></Tags>
           </el-col>
         </el-row>
         <el-row class="hidden-lg-and-up">
