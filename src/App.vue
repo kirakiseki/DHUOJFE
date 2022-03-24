@@ -17,18 +17,19 @@ import Tags from './components/sidebar/tags.vue';
             <Main title="hidden-md-and-down 1"></Main>
           </el-col>
           <el-col :span="5" class="sidebar">
-              <Tags></Tags>
-              <Tags></Tags>
+            <Tags></Tags>
+            <Tags></Tags>
+            <Tags></Tags>
+            <Tags></Tags>
           </el-col>
         </el-row>
         <el-row class="hidden-lg-and-up">
-          <el-col :span="24">
+          <el-col :span="24" class="sidebar">
             <Main title="hidden-lg-and-up 1"></Main>
-          </el-col>
-        </el-row>
-        <el-row class="hidden-lg-and-up">
-          <el-col :span="24">
-            <Main title="hidden-lg-and-up 2"></Main>
+            <Tags></Tags>
+            <Tags></Tags>
+            <Tags></Tags>
+            <Tags></Tags>
           </el-col>
         </el-row>
       </el-main>
