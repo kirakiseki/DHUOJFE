@@ -1,8 +1,9 @@
 <script>
 export default {
     mounted: function () {
-        let result = mdParser(`# Markdown test \n \n ## Render by mdParser \n \n - test1 \n + test2`);
+        let result = mdParser("# Markdown Test \n ## test\n---\n+ test\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n$$\\LaTeX$$\n## TODO \n serverless MathJax Supprt");
         this.$refs.content.innerHTML = result;
+        console.log(result);
     }
 }
 </script>

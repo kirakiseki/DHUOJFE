@@ -23,7 +23,7 @@ function mdParser(data) {
             return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
         }
     });
-    let result = mdit.render(data)
+    let result = mdit.render(data);
     return result;
 }
 
