@@ -1,7 +1,7 @@
 <script setup>
 import Nav from './components/nav.vue';
 import Footer from './components/footer.vue';
-import Main from './components/main.vue';
+import Problem from './components/content/problem.vue';
 import Tags from './components/sidebar/tags.vue';
 </script>
 
@@ -14,7 +14,7 @@ import Tags from './components/sidebar/tags.vue';
       <el-main class="main">
         <el-row :gutter="20" class="hidden-md-and-down">
           <el-col :span="19">
-            <Main title="hidden-md-and-down 1"></Main>
+            <Problem id="UVA114514" title="夜に駆ける"></Problem>
           </el-col>
           <el-col :span="5" class="sidebar">
             <Tags></Tags>

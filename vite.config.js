@@ -9,6 +9,7 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   plugins: [
     vue(),
+    // mdParser,
     //Auto Import Deprecated
     // AutoImport({
     //   resolvers: [ElementPlusResolver()],

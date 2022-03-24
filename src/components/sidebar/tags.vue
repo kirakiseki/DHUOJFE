@@ -2,12 +2,12 @@
     <el-card class="box-card">
         <template #header>
             <div class="card-header">
-                <span>{{ title }}</span>
-                <el-button class="button" type="text">Emmm... It's just a blank placeholder</el-button>
+                <span>Tags</span>
+                <el-button class="button" type="text">All algorithm tags</el-button>
             </div>
         </template>
         <div class="tags-container">
-            <el-button v-for="o in 20" :key="o" type="primary">{{ "tag " + o }}</el-button>
+            <el-button v-for="o in 20" :key="o" type="plain">{{ "tag " + o }}</el-button>
         </div>
     </el-card>
 </template>
