@@ -1,7 +1,6 @@
 import MarkdownIt from 'markdown-it';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
-
 function mdParser(data) {
     let mdit = new MarkdownIt({
         html: false,        // Enable HTML tags in source
