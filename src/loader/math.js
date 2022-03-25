@@ -16,6 +16,20 @@ function initDone() {
     })
 }
 
+function reRenderDone() {
+    ElNotification({
+        title: 'Success',
+        message: 'Expressions have been rerendered.',
+        type: 'success',
+    })
+}
+
+function rerenderTex() {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+    reRenderDone();
+}
 
 function mathFind() {
     var body = document.querySelector(".main").textContent;
@@ -34,13 +48,22 @@ function mathFind() {
                 }
             };
         }
-        loadFile();
-        var script = document.createElement('script');
-        script.src = 'https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js';
-        document.head.appendChild(script);
-        script = document.createElement('script');
-        script.src = 'https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js';
-        document.head.appendChild(script);
+        else {
+            rerenderTex();
+        }
+
+        if (!document.querySelector("#mathjax")) {
+            loadFile();
+            var script = document.createElement('script');
+            script.src = 'https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js';
+            document.head.appendChild(script);
+            script = document.createElement('script');
+            script.src = 'https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js';
+            script.id = 'mathjax';
+            document.head.appendChild(script);
+        }
+
     }
 }
-export default mathFind;
+
+export { mathFind, rerenderTex };
