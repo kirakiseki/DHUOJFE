@@ -11,13 +11,20 @@
 <body>
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
-  <script>
+  <!-- <script>
     MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      startup: {
+        pageReady: () => {
+          return MathJax.startup.defaultPageReady().then(() => {
+            console.log('MathJax initial typesetting complete');
+          });
+        }
+      }
     };
   </script>
   <script src="https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js"></script>
-  <script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js"></script> -->
 </body>
 
 </html>

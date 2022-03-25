@@ -5,7 +5,10 @@ import Problem from './components/content/problem.vue';
 import Tags from './components/sidebar/tags.vue';
 </script>
 
+
+
 <template>
+
   <div class="page-container">
     <el-container class="main-container">
       <el-header class="header">
