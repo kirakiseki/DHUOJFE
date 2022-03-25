@@ -1,20 +1,26 @@
 <template>
-    <el-row class="footer hidden-sm-and-down">
-        <el-col :span="24" class="hidden-md-and-down">
-        <img src="https://img.shields.io/github/last-commit/kirakiseki/dhuojfe?style=for-the-badge"/>
-        <img src="https://img.shields.io/github/commit-activity/y/kirakiseki/DHUOJFE?style=for-the-badge"/>
+    <el-row class="footer">
+        <el-col :span="12">
+            <div class="copyright">
+                <span>© 2022 Donghua University ACM Lab. All Right Reserved.</span>
+                <br />
+                <span>B431 Comprehensive Lab Building, Songjiang Campus, Donghua University</span>
+                <br />
+                <span>North Renmin Road, Shanghai, 201620</span>
+            </div>
         </el-col>
     </el-row>
+    <el-row class="footer-dark hidden-md-and-down" justify="space-between">
+        <div class="badge">
+            <img
+                src="https://img.shields.io/github/last-commit/kirakiseki/dhuojfe?style=for-the-badge"
+            />
+        </div>
+        <p id="hitokoto">
+            <a href="#" id="hitokoto_text"></a>
+        </p>
+    </el-row>
 </template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-
-const activeIndex = ref('1')
-const handleSelect = (key: string, keyPath: string[]) => {
-    console.log(key, keyPath)
-}
-</script>
 
 <style scoped lang="scss">
 @import "@/assets/scss/footer.scss";

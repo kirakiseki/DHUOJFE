@@ -8,7 +8,6 @@ import Tags from './components/sidebar/tags.vue';
 
 
 <template>
-
   <div class="page-container">
     <el-container class="main-container">
       <el-header class="header">
@@ -28,7 +27,7 @@ import Tags from './components/sidebar/tags.vue';
         </el-row>
         <el-row class="hidden-lg-and-up">
           <el-col :span="24" class="sidebar">
-            <Main title="hidden-lg-and-up 1"></Main>
+            <Problem id="UVA114514" title="夜に駆ける"></Problem>
             <Tags></Tags>
             <Tags></Tags>
             <Tags></Tags>

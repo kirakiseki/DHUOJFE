@@ -1,4 +1,34 @@
 .footer {
     background-color: $footer-color;
     height: $footer-height;
+    color: #fff;
+}
+
+.footer-dark{
+    background-color: $footer-dark-color;
+    height: auto;
+}
+
+.badge{
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.badge>*{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright{
+    padding: 20px;
+    font-size: 1rem;
+}
+
+#hitokoto {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-right: 20px;
+    color: #fff;
 }
