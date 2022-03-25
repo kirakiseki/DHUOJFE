@@ -1,7 +1,8 @@
 <script>
 export default {
     mounted: function () {
-        let result = mdParser("# Markdown Test \n ## test\n---\n+ test\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n $$\\left( \\sum_{k=1}^n a_k b_k \\right)^{2} \\leq\\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$ \n# Inline MathJax test\n expression $\\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.");
+        let dat = `# Markdown Test \n ## test\n---\n+ test\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n $$\\left( \\sum_{k=1}^n a_k b_k \\right)^{2} \\leq\\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$ \n# Inline MathJax test\n expression $\\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.`;
+        let result = mdParser(dat);
         this.$refs.content.innerHTML = result;
         console.log(result);
         mathFind();
@@ -31,7 +32,7 @@ const props = defineProps({
             </div>
         </template>
         <div ref="content"></div>
-        <el-button @click="rerender">Rerender Math Test</el-button>
+        <el-button @click="loadFile">Rerender Math Test</el-button>
     </el-card>
 </template>
 
