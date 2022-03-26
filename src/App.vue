@@ -4,6 +4,7 @@ import Footer from './components/footer.vue';
 import Problem from './components/content/problem.vue';
 import Tags from './components/sidebar/tags.vue';
 import Billboard from './components/sidebar/billboard.vue';
+import ProblemInfo from './components/sidebar/probleminfo.vue';
 </script>
 
 
@@ -21,8 +22,7 @@ import Billboard from './components/sidebar/billboard.vue';
           </el-col>
           <el-col :span="5" class="sidebar">
             <Billboard></Billboard>
-            <Tags></Tags>
-            <Tags></Tags>
+            <ProblemInfo></ProblemInfo>
             <Tags></Tags>
           </el-col>
         </el-row>
@@ -40,7 +40,7 @@ import Billboard from './components/sidebar/billboard.vue';
         <Footer></Footer>
       </el-footer>
     </el-container>
-    <el-backtop />
+    <el-backtop :bottom="150"/>
   </div>
 </template>
 

@@ -21,6 +21,7 @@
             <br />🎶贞→贞→贞→贞↗德↘↗🎶
             <br />
         </div>
+        <el-divider content-position="right">Sat Mar 26 2022 14:35:26 GMT+0800 (中国标准时间)</el-divider>
     </el-card>
 </template>
 
@@ -32,6 +33,12 @@ const props = defineProps({
 
 <style>
 .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-header {
     display: flex;
     justify-content: space-between;
     align-items: center;

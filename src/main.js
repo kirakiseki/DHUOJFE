@@ -6,10 +6,10 @@ import '@element-plus/icons-vue'
 import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faTags } from '@fortawesome/free-solid-svg-icons'
+import { faTags, faChartArea, faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { faMessage } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-library.add(faTags, faMessage)
+library.add(faTags, faMessage, faChartArea, faAngleRight)
 
 
 

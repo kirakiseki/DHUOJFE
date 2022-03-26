@@ -5,7 +5,8 @@ function loadFile() {
         title: 'Info',
         message: 'MathJax is loading...Please wait.',
         type: 'info',
-    })
+    });
+    console.log('MathJax is loading...Please wait.\n'+new Date());
 }
 
 function initDone() {
@@ -13,7 +14,8 @@ function initDone() {
         title: 'Success',
         message: 'MathJax initial typesetting complete.',
         type: 'success',
-    })
+    });
+    console.log('MathJax initial typesetting complete.\n'+new Date());
 }
 
 function reRenderDone() {
@@ -21,7 +23,8 @@ function reRenderDone() {
         title: 'Success',
         message: 'Expressions have been rerendered.',
         type: 'success',
-    })
+    });
+    console.log('Expressions have been rerendered.\n'+new Date());
 }
 
 function rerenderTex() {
@@ -33,7 +36,7 @@ function rerenderTex() {
 
 function mathFind() {
     var body = document.querySelector(".main").textContent;
-    console.log(body);
+    // console.log(body);
     if (body.match(/(?:\$|\\\(|\\\[|\\begin\{.*?})/)) {
         if (!window.MathJax) {
             window.MathJax = {
@@ -41,7 +44,6 @@ function mathFind() {
                 startup: {
                     pageReady: () => {
                         return MathJax.startup.defaultPageReady().then(() => {
-                            console.log('MathJax initial typesetting complete');
                             initDone();
                         });
                     }

@@ -1,7 +1,9 @@
 <script>
 export default {
     mounted: function () {
-        let dat = `# Markdown Test \n ## test\n---\n+ Highlight test\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n # Display math block \n $$\\left( \\sum_{k=1}^n a_k b_k \\right)^{2} \\leq\\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$ \n# Inline MathJax test\n expression $\\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.\n\n`;
+        let dat = `# Markdown Test \n ## test\n---\n+ Highlight test\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n # Display math block \n $$\\left( \\sum_{k=1}^n a_k b_k \\right)^{2} \\leq\\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$ \n# bbox and tag test\n$$\\bbox[#cde, 3px,border:1px solid blue]{
+e^{i\\pi }+1=0\\tag{1}
+}$$\n# Inline math test\n expression $\\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.\n\n`;
         let result = mdParser(dat);
         this.$refs.content.innerHTML = result;
         dat = `Here’s to the crazy ones.
@@ -77,11 +79,22 @@ const blockMargin = computed(() => {
         <template #header>
             <div class="card-header">
                 <span class="title">{{ id + " " + title }}</span>
+                <div>
+                    <el-button type="primary">Add to Problemset</el-button>
+                    <el-button type="primary">Submit</el-button>
+                </div>
             </div>
         </template>
         <el-button type="danger" @click="rerenderTex">[Debug] Rerender all expressions</el-button>
         <div ref="content"></div>
-        <el-descriptions class="examples" title="Example" direction="vertical" :column="2" :size="large" border>
+        <el-descriptions
+            class="examples"
+            title="Example"
+            direction="vertical"
+            :column="2"
+            :size="large"
+            border
+        >
             <el-descriptions-item label="Input #1">Cherry</el-descriptions-item>
             <el-descriptions-item label="Output #1">🍋什么时候熟啊</el-descriptions-item>
             <el-descriptions-item label="Input #2">Lorem ipsum</el-descriptions-item>
@@ -90,7 +103,9 @@ const blockMargin = computed(() => {
             <el-descriptions-item label="Output #3">
                 <div ref="output3"></div>
             </el-descriptions-item>
-            <el-descriptions-item label="Input #4"><div ref="input4"></div></el-descriptions-item>
+            <el-descriptions-item label="Input #4">
+                <div ref="input4"></div>
+            </el-descriptions-item>
             <el-descriptions-item label="Output #2">114514</el-descriptions-item>
         </el-descriptions>
     </el-card>
