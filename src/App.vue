@@ -27,20 +27,21 @@ import ProblemInfo from './components/sidebar/probleminfo.vue';
           </el-col>
         </el-row>
         <el-row class="hidden-lg-and-up">
+          <el-col :span="24" class="content">
+            <Problem id="UVA114514" title="夜に駆ける"></Problem>
+          </el-col>
           <el-col :span="24" class="sidebar">
-            <Main title="hidden-lg-and-up 1"></Main>
-            <Tags></Tags>
-            <Tags></Tags>
-            <Tags></Tags>
+            <Billboard></Billboard>
+            <ProblemInfo></ProblemInfo>
             <Tags></Tags>
           </el-col>
         </el-row>
       </el-main>
-      <el-footer class="footer">
+      <el-footer class="footer hidden-md-and-down">
         <Footer></Footer>
       </el-footer>
     </el-container>
-    <el-backtop :bottom="150"/>
+    <el-backtop :bottom="150" />
   </div>
 </template>
 

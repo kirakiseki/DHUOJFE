@@ -80,7 +80,6 @@ const blockMargin = computed(() => {
             <div class="card-header">
                 <span class="title">{{ id + " " + title }}</span>
                 <div>
-                    <el-button type="primary">Add to Problemset</el-button>
                     <el-button type="primary">Submit</el-button>
                 </div>
             </div>
