@@ -9,6 +9,35 @@
                 <span>North Renmin Road, Shanghai, 201620</span>
             </div>
         </el-col>
+        <el-col :span="12">
+            <div class="author">
+                <span>
+                    Frontend by
+                    <el-avatar
+                        class="avatar"
+                        size="small"
+                        src="https://avatars.githubusercontent.com/u/38367158?v=4"
+                    />
+                    <a href="https://blog.ishirai.cc"> Ishirai </a>
+                </span>
+                <br />
+                <span>
+                    Backend by
+                    <el-avatar
+                        class="avatar"
+                        size="small"
+                        src="https://avatars.githubusercontent.com/u/40843263?v=4"
+                    />
+                    <a href="https://github.com/AEMShana"> AEMShana </a> and
+                    <el-avatar
+                        class="avatar"
+                        size="small"
+                        src="https://avatars.githubusercontent.com/u/101724828?v=4"
+                    />
+                    <a href="https://github.com/Yincronus"> Yincronus </a>
+                </span>
+            </div>
+        </el-col>
     </el-row>
     <el-row class="footer-dark hidden-md-and-down" justify="space-between">
         <div class="badge">

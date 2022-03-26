@@ -1,7 +1,7 @@
 <script>
 export default {
     mounted: function () {
-        let dat = `# Markdown Test \n ## test\n---\n+ Highlight.js-Github Theme\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n # Display math\n$$\\left( \\sum_{k=1}^n a_k b_k \\right)^{2} \\leq\\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$ \n# Inline MathJax test\n expression $\\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.`;
+        let dat = `# Markdown Test \n ## test\n---\n+ Highlight test\n\`\`\`cpp\nint main(){\n return 0;\n}\n\`\`\`\n # Display math block \n $$\\left( \\sum_{k=1}^n a_k b_k \\right)^{2} \\leq\\left( \\sum_{k=1}^n a_k^2 \\right) \\left( \\sum_{k=1}^n b_k^2 \\right)$$ \n# Inline MathJax test\n expression $\\sqrt{3x-1}+(1+x)^2$ is an example of an inline equation.`;
         let result = mdParser(dat);
         this.$refs.content.innerHTML = result;
         mathFind();
@@ -29,6 +29,7 @@ const props = defineProps({
             </div>
         </template>
         <div ref="content"></div>
+        <el-button type="danger" @click="rerenderTex"> [Debug] Rerender all expressions</el-button>
     </el-card>
 </template>
 

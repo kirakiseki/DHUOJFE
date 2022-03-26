@@ -3,11 +3,13 @@ import Nav from './components/nav.vue';
 import Footer from './components/footer.vue';
 import Problem from './components/content/problem.vue';
 import Tags from './components/sidebar/tags.vue';
+import Billboard from './components/sidebar/billboard.vue';
 </script>
 
 
 
 <template>
+
   <div class="page-container">
     <el-container class="main-container">
       <el-header class="header">
@@ -19,7 +21,7 @@ import Tags from './components/sidebar/tags.vue';
             <Problem id="UVA114514" title="夜に駆ける"></Problem>
           </el-col>
           <el-col :span="5" class="sidebar">
-            <Tags></Tags>
+            <Billboard></Billboard>
             <Tags></Tags>
             <Tags></Tags>
             <Tags></Tags>
@@ -27,7 +29,7 @@ import Tags from './components/sidebar/tags.vue';
         </el-row>
         <el-row class="hidden-lg-and-up">
           <el-col :span="24" class="sidebar">
-            <Problem id="UVA114514" title="夜に駆ける"></Problem>
+            <Main title="hidden-lg-and-up 1"></Main>
             <Tags></Tags>
             <Tags></Tags>
             <Tags></Tags>

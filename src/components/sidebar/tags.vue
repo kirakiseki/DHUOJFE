@@ -2,7 +2,9 @@
     <el-card class="box-card">
         <template #header>
             <div class="card-header">
-                <span>Tags</span>
+                <span>
+                    <font-awesome-icon class="icon icon-sidebar" :icon="['fas', 'tags']" />Tags
+                </span>
                 <el-button class="button" type="text">All algorithm tags</el-button>
             </div>
         </template>
