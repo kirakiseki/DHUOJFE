@@ -9,7 +9,6 @@ import Billboard from './components/sidebar/billboard.vue';
 
 
 <template>
-
   <div class="page-container">
     <el-container class="main-container">
       <el-header class="header">
@@ -17,7 +16,7 @@ import Billboard from './components/sidebar/billboard.vue';
       </el-header>
       <el-main class="main">
         <el-row :gutter="20" class="hidden-md-and-down">
-          <el-col :span="19">
+          <el-col :span="19" class="content">
             <Problem id="UVA114514" title="夜に駆ける"></Problem>
           </el-col>
           <el-col :span="5" class="sidebar">
