@@ -16,22 +16,6 @@ const props = defineProps({
 })
 </script>
 
-<style>
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text {
-    font-size: 14px;
-}
-
-.item {
-    margin-bottom: 18px;
-}
-
-.box-card {
-    width: auto;
-}
+<style scoped lang="scss">
+@import "@/assets/scss/main.scss";
 </style>

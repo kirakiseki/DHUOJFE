@@ -37,9 +37,6 @@ are the ones who do.
 才能真正地改变世界。`;
         result = mdParser(dat);
         this.$refs.output3.innerHTML = result;
-        dat = `![](https://img2.baidu.com/it/u=787217374,1531855528&fm=253&fmt=auto&app=138&f=JPG?w=500&h=500)`;
-        result = mdParser(dat);
-        this.$refs.input4.innerHTML = result;
         mathFind();
     },
     watch: function () {
@@ -90,7 +87,7 @@ const blockMargin = computed(() => {
             class="examples"
             title="Example"
             direction="vertical"
-            :column="2"
+            :column="1"
             :size="large"
             border
         >
@@ -100,42 +97,13 @@ const blockMargin = computed(() => {
             <el-descriptions-item label="Output #2">dolor sit amet</el-descriptions-item>
             <el-descriptions-item label="Input #3">Multiple lines</el-descriptions-item>
             <el-descriptions-item label="Output #3">
-                <div ref="output3"></div>
+                <div ref="output3" class="output3"></div>
             </el-descriptions-item>
-            <el-descriptions-item label="Input #4">
-                <div ref="input4"></div>
-            </el-descriptions-item>
-            <el-descriptions-item label="Output #2">114514</el-descriptions-item>
         </el-descriptions>
     </el-card>
 </template>
 
 
-<style>
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text {
-    font-size: 14px;
-}
-
-.item {
-    margin-bottom: 18px;
-}
-
-.box-card {
-    width: auto;
-}
-
-.title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.examples {
-    padding-top: 3rem;
-}
+<style lang="scss">
+@import "@/assets/scss/problem.scss";
 </style>

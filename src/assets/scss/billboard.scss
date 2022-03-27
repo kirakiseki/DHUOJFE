@@ -1,0 +1,21 @@
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-card {
+    width: auto;
+}
+
+.date {
+    text-align: end;
+    color: rgb(168, 168, 168);
+    font-size: small;
+}

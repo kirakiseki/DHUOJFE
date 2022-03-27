@@ -36,7 +36,6 @@
             </el-descriptions-item>
             <el-descriptions-item label="Included in Problemset">
                 <el-button class="button" type="text">Example Problemset 1</el-button>
-                <el-button class="button" type="text">Example Problemset 2</el-button>
                 <el-button class="button" type="text">More<font-awesome-icon class="icon" :icon="['fas', 'angle-right']" /></el-button>
             </el-descriptions-item>
         </el-descriptions>
@@ -64,49 +63,6 @@ const blockMargin = computed(() => {
 const value = ref(3.7)
 </script>
 
-<style>
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text {
-    font-size: 14px;
-}
-
-.item {
-    margin-bottom: 18px;
-}
-
-.box-card {
-    width: auto;
-}
-
-.tags-container {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-between;
-}
-
-.tags-container > .el-button {
-    margin: 3px;
-}
-
-.author-container {
-    display: flex;
-    align-items: center;
-}
-
-.author-id {
-    margin-left: 10px;
-    font-size: medium;
-}
-
-.rating-container * {
-    display: flex;
-    align-items: center;
-}
+<style lang="scss">
+@import "@/assets/scss/probleminfo.scss";
 </style>

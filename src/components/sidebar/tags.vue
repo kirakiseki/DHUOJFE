@@ -20,34 +20,6 @@ const props = defineProps({
 })
 </script>
 
-<style>
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text {
-    font-size: 14px;
-}
-
-.item {
-    margin-bottom: 18px;
-}
-
-.box-card {
-    width: auto;
-}
-
-.tags-container {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: space-between;
-}
-
-.tags-container > .el-button {
-    margin: 3px;
-}
+<style scoped lang="scss">
+@import "@/assets/scss/tags.scss";
 </style>
